@@ -5,10 +5,8 @@ x2 = float(input("Introduce la x del segundo punto: "))
 y2 = float(input("Introduce la y del segundo punto: "))
 r2 = float(input("Introduce el radio del segundo círculo: "))
 
-# Distancia entre los dos centros sin usar la librería math (usando ** 0.5)
 distancia = ((x2 - x1)**2 + (y2 - y1)**2) ** 0.5
 
-# Clasificación
 if distancia > (r1 + r2):
     print("Son circunferencias exteriores.")
 elif distancia == (r1 + r2):
